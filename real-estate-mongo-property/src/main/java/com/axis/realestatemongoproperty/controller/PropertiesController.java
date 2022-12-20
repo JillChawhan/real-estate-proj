@@ -19,8 +19,21 @@ import com.axis.realestatemongoproperty.service.PropertiesService;
 
 @CrossOrigin("http://localhost:3000")
 @RestController
-public class PropertiesController {
+public class PropertiesController {	
 	
+	public PropertiesController() {
+		super();
+	}
+
+	public PropertiesService getPropertiesService() {
+		return propertiesService;
+	}
+
+	public void setPropertiesService(PropertiesService propertiesService) {
+		this.propertiesService = propertiesService;
+	}
+
+
 	@Autowired
 	PropertiesService propertiesService;
 	

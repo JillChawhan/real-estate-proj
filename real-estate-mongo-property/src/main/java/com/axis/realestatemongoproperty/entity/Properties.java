@@ -24,7 +24,7 @@ public class Properties {
 	private String state;
 	private String country;
 	private long pinCode;
-	private String images[];
+	private String images;
 	
 	
 	public Properties() {
@@ -33,7 +33,7 @@ public class Properties {
 	public Properties(String propertyId, String sellType, int daysOnMarket, String type, int yearBuilt, int bathroom,
 			int bed, int livingRoom, long price
 			, double squareFeet, String plotNumber, String streetName, String city,
-			String state, String country, int pinCode, String[] images) {
+			String state, String country, int pinCode, String images) {
 		super();
 		this.propertyId = propertyId;
 		this.sellType = sellType;
@@ -182,11 +182,11 @@ public class Properties {
 		this.pinCode = pinCode;
 	}
 
-	public String[] getImages() {
+	public String getImages() {
 		return images;
 	}
 
-	public void setImages(String[] images) {
+	public void setImages(String images) {
 		this.images = images;
 	}
 
@@ -213,8 +213,7 @@ public class Properties {
 				+ ", type=" + type + ", yearBuilt=" + yearBuilt + ", bathroom=" + bathroom + ", bed=" + bed
 				+ ", livingRoom=" + livingRoom + ", price=" + price + ", squareFeet=" + squareFeet + ", plotNumber="
 				+ plotNumber + ", streetName=" + streetName + ", city=" + city + ", state=" + state + ", country="
-				+ country + ", pinCode=" + pinCode + "]";
+				+ country + ", pinCode=" + pinCode + ", images=" + images + "]";
 	}
-	
 	
 }

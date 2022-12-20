@@ -21,4 +21,7 @@ public interface UserDetailsService {
 	// delete user
 	void deleteUser(long userId);
 	
+	// get user by email
+	UserDetails getUserByEmail(String emailId);
+	
 }
